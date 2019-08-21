@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
+import Welcomemessage from "./Welcomemessage";
 
 class App extends Component {
   render() {
-    return <div>hello world</div>;
+    return <Welcomemessage />;
   }
 }
 
