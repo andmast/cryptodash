@@ -2,30 +2,14 @@ import React, { Component } from "react";
 import "./App.css";
 import Welcomemessage from "./Welcomemessage";
 import styled, { css } from "styled-components";
-
-const Mybutton = styled.button`
-  color: green;
-  ${props =>
-    props.primary &&
-    css`
-      color: palevioletred;
-    `}
-`;
-
-const TomatoButton = styled(Mybutton)`
-  color: tomato;
-  border-color: tomato;
-`;
+import AppLayout from "./AppLayout";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <AppLayout>
         <Welcomemessage />
-        <Mybutton> Hello </Mybutton>
-        <Mybutton primary> Hello </Mybutton>
-        <TomatoButton> Hello </TomatoButton>
-      </div>
+      </AppLayout>
     );
   }
 }
