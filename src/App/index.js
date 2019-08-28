@@ -3,7 +3,7 @@ import "./App.css";
 import Welcomemessage from "./Welcomemessage";
 import styled, { css } from "styled-components";
 
-const Mybutton = styled.div`
+const Mybutton = styled.button`
   color: green;
   ${props =>
     props.primary &&
