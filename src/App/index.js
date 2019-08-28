@@ -12,6 +12,11 @@ const Mybutton = styled.div`
     `}
 `;
 
+const TomatoButton = styled(Mybutton)`
+  color: tomato;
+  border-color: tomato;
+`;
+
 class App extends Component {
   render() {
     return (
@@ -19,6 +24,7 @@ class App extends Component {
         <Welcomemessage />
         <Mybutton> Hello </Mybutton>
         <Mybutton primary> Hello </Mybutton>
+        <TomatoButton> Hello </TomatoButton>
       </div>
     );
   }
