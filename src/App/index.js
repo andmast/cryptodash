@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import Welcomemessage from "./Welcomemessage";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Mybutton = styled.div`
   color: green;
+  ${props =>
+    props.primary &&
+    css`
+      color: palevioletred;
+    `}
 `;
 
 class App extends Component {
@@ -13,6 +18,7 @@ class App extends Component {
       <div>
         <Welcomemessage />
         <Mybutton> Hello </Mybutton>
+        <Mybutton primary> Hello </Mybutton>
       </div>
     );
   }
